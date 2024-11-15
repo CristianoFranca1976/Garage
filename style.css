@@ -1,0 +1,272 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+#container {
+  border: 1px solid red;
+  width: 1400px;
+  height: 1000px;
+  display: flex;
+}
+aside {
+  border: 1px solid rgb(17, 17, 17);
+  width: 80px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 20px 0;
+  transition: width 2s;
+}
+.btns, .back, .send {
+  width: 100%;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: justify-content 5s;
+  transition: width 2s;
+}
+.btns:hover {
+  background-color: rgba(74, 250, 5, 0.466);
+}
+.btns:focus {
+  background-color: rgb(74, 250, 5);
+}
+.logos {
+  width: 48px;
+  height: 48px;
+}
+.logos:hover {
+  width: 52px;
+  height: 52px;
+}
+.name-logo {
+  display: none;
+  width: auto;
+  font-family: "Playwrite HR", cursive;
+  color: black;
+  font-size: 18px;
+  margin: 0;
+}
+nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  margin-top: -200px;
+}
+.login {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 55px;
+}
+section {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+h1 {
+  font-size: 5vh;
+  font-family: "Ga Maamli", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+h1::after {
+  content: "";
+  display: flex;
+  width: auto;
+  height: 5px;
+  background: linear-gradient(
+    to right,
+    rgb(111, 111, 112) 50%,
+    rgb(17, 17, 17) 100%
+  );
+  border-radius: 20px;
+  transition: width 5s infinite;
+}
+.top {
+  display: flex;
+}
+#basket {
+  position: relative;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  height: 60px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  width: 100px;
+}
+.total-basket {
+  font-size: 2vh;
+}
+.img-car {
+  max-width: 600px;
+  height: 500px;
+}
+.types-service {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+}
+.card {
+  border: 1px solid rgba(15, 15, 15, 0.2);
+  width: auto;
+  height: 200px;
+  padding: 10px;
+}
+.add {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-left: auto;
+}
+.btn-options {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+.input-checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.types {
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  width: 150px;
+  height: 120px;
+  padding: 20px;
+}
+.invoce {
+  border: 1px solid black;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0;
+}
+header {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+main {
+  width: auto;
+  height: 100%;
+  padding: 0 50px;
+}
+.items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.items-engine {
+  display: flex;
+  justify-content: end;
+}
+.div-confirm{
+ height: 50px;
+}
+.confirm-item {
+  display: none;
+}
+input[type="checkbox"] {
+ visibility:visible;
+}
+label {
+  display: flex;
+  align-items: center;
+}
+.box {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+h3 {
+  color: blue;
+  font-size: 4vh;
+  margin: 0;
+  border-right: 3px solid red;
+  padding-right: 10px;
+}
+.term {
+  width: 300px;
+  margin-left: 10px;
+}
+.description {
+  border-top: 3px solid red;
+  border-bottom:  3px solid red;
+  display: flex;
+  justify-content: space-between;
+}
+.logo-company {
+  width: 150px;
+}
+@media screen and (max-width: 767px) {
+  body {
+    height: auto;
+  }
+  #container {
+    flex-direction: column;
+    width: 100%;
+  }
+  section {
+    width: auto;
+  }
+  .img-car {
+    width: 100%;
+    height: auto;
+  }
+  aside {
+    flex-direction: row;
+    width: 100%;
+  }
+  .logos {
+    width: 28px;
+    height: 28px;
+  }
+  .btn-menu,
+  a {
+    flex-direction: column;
+    height: 100%;
+  }
+  .login {
+    flex-direction: column;
+  }
+  nav {
+    flex-direction: row;
+  }
+}
